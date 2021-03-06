@@ -6,7 +6,6 @@ int main() {
 	int n, m, p;
 	int characters[26] = { 0 };
 	int i, j;
-	char c;
 
 	cin >> n >> m >> p;
 	for (i = 0; i < n; i++) {
@@ -26,8 +25,7 @@ int main() {
 	for (i = 0; i < 26; i++) {
 		if (characters[i] != 0) {
 			for (j = 0; j < characters[i]; j++) {
-				c = 'A' + i;
-				cout << c;
+				cout << static_cast<char>('A' + i);
 			}
 		}
 	}

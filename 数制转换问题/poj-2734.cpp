@@ -1,4 +1,4 @@
-// 十进制转八进制
+// 十进制到八进制
 #include <iostream>
 #include <cstdio>
 using namespace std;

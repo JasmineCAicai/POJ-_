@@ -82,3 +82,7 @@ base[0] = 1; base[k] = 2^(k+1) - 1 = 2 * (2^k - 1) + 1 = 2 * base[k - 1] + 1;
 ## 字符串处理
 ### poj-2742-统计字符数
 ### poj-2974-487-3279
+### poj-2744-子串
+POJ环境下，C++不支持strrev，需自己实现；对于strcpy和strncpy的unsafe问题不会报错
+
+VS环境下，支持strrev；但对于strcpy和strncpy的unsafe问题会报错。

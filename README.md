@@ -96,3 +96,4 @@ VS环境下，支持strrev；但对于strcpy和strncpy的unsafe问题会报错�
 
 ## 日期和时间处理
 ### poj-2733-判断闰年
+### poj-2712-细菌繁殖

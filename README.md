@@ -92,3 +92,4 @@ VS环境下，支持strrev；但对于strcpy和strncpy的unsafe问题会报错�
 ### poj-2975-Caesar密码
 ### poj-2743-字符串判等
 要注意区分两个字符串全是空格、长度为0、不全是空格的情况。
+### poj-2976-All

@@ -9,12 +9,10 @@ int main() {
 	cin >> n;
 	while (n > 0) {
 		cin >> sm >> sd >> sum >> em >> ed;
-		if (sm == em) t = ed - sd;
-		else {
-			for (i = sm; i <= em; i++) 
-				t += month[i-1];
-			t -= (sd + (month[em-1] - ed));
+		for (i = sm; i <= em; i++) {
+			t += month[i - 1];
 		}
+		t -= (sd + (month[em-1] - ed));
 		for (i = 0; i < t; i++) {
 			sum = sum * 2;
 		}

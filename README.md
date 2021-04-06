@@ -137,3 +137,28 @@ for (int i = 0; num[i] != '\0'; i++) {
 ### poj-2981-大整数加法
 **要善于运用字符的ASCII值！！**
 **数组的大小可以故意开大点，不用费心思定的正好合适。**
+
+### poj-2980-大整数乘法
+```C++
+// 对数组赋值“0”
+memset(an2, 0, sizeof(an2));
+```
+```C++
+// 效果一样，因为‘0’的ASCII码是48
+an2[j++] = szLine2[i] - 48;
+an2[j++] = szLine2[i] - '0';
+```
+**关键思路**
+```C++
+for (i = 0; i < nLen2; i++) {
+	for (j = 0; j < nLen1; j++)
+		aResult[i + j] += an2[i] * an1[j];
+}
+
+for (i = 0; i < 400; i++) {
+	if (aResult[i] >= 10) {
+		aResult[i + 1] += aResult[i] / 10;
+		aResult[i] %= 10;
+	}
+}
+```
